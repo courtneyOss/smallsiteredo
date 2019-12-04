@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+ 
+<link rel="stylesheet" href="css/stylesheetp.css">
+ 
+<!---social media symbols--->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!---Font--->
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+<link href="images/favicon.png" rel="icon" type="image/png" size="16x16">
+    
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="menu2.html">About</a>
+  <a href="menu3.html">Gallery</a>
+  <a><img src="images/favicon.png"></a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+   <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} </script>
+   
+
+<header><h2> Album </h2></header>
+    
+<!--- Video --->
+   <div class="video">
+    <iframe style="border: 20px; width: 1080px; height: 728px;" margin: 25px; align-content: centered; src="https://bandcamp.com/VideoEmbed?track=1130184008&bgcol=333333&linkcol=e32c14" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" seamless></iframe>
+    </div>
+    
+ </body>   
+</html>

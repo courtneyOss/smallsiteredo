@@ -1,0 +1,276 @@
+/*grid stuff*/
+
+a {
+    text-decoration: none;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1.5fr;
+  grid-template-areas: ". . . . ." ". . . . ." ". . . . .";
+  background-color: black;
+}
+
+body {
+    background-color: black;
+}
+.neon {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.link a {
+    font-size: 3em;
+    color: palevioletred; 
+}
+.aboutlink {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-decoration: none;
+    color: palevioletred;
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.gallerylink {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+    
+}
+
+.performanceslink {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    text-align: center;
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.sociallinks {
+    text-decoration: none;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    align-content: center;
+}
+
+/*social media stuff*/
+
+.fa {
+  padding: 5px;
+justify-content: center;
+    margin-left: 30px;
+    margin-right: 79px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: pink;
+  color: white;
+  float: left;
+ padding: 10px;
+    padding-left: 10px;
+}
+
+/* Twitter */
+.fa-twitter {
+display: inline-block;
+  background: pink;
+  color: white; 
+float: left;
+ padding: 10px;
+ padding-left: 10px;
+}
+
+/* Youtube */
+.fa-youtube {
+    background: pink;
+    color: white;
+     float: left;
+ padding: 10px;
+padding-left: 10px;
+
+}
+
+/* Placements */
+.facebookbutton {
+    grid-row: 3/3;
+    grid-column: 1/1;
+}
+
+.twitterbutton {
+    grid-row: 3/3;
+    grid-column: 2/2;
+}
+
+.youtubebutton {
+    grid-row: 3/3;
+    grid-column: 3/3;
+}
+
+/*Neon Sign Home Page*/
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+h1 {
+  font-size: 200px;
+  line-height: calc(20px + 20vh);
+font-family: 'Bebas Neue';
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px pink, 0 0 15px pink, 0 0 20px pink, 0 0 40px pink, 0 0 60px hotpink, 0 0 10px pink, 0 0 98px hotpink;
+    color: lightpink;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+body {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+}
+
+aboutbody {
+    background: none;
+    
+}
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px red, 0 0 15px red, 0 0 20px red, 0 0 40px red, 0 0 60px darkred, 0 0 10px red, 0 0 98px darkred;
+    color: pink;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px pink, 0 0 15px pink, 0 0 20px hotpink, 0 0 40px pink, 0 0 60px hotpink, 0 0 10px pink, 0 0 98px hotpink;
+    color: lightpink;
+  }
+}
+
+/*Menu Links*/
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* The sidebar menu */
+
+mySidenav {
+    position: fixed;
+    float: down;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hotpink;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: pink;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 45px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+

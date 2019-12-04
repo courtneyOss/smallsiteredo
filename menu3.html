@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<link rel="stylesheet" href="css/stylesheetg.css">
+
+<link rel="stylesheetreset" href="css/reset.css">
+ 
+
+
+<!---Font--->
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    
+<link href="images/favicon.png" rel="icon" type="image/png" size="16x16">
+
+
+    
+</head>
+
+<body>
+    
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="menu2.html">About</a>
+  <a href="menu4.html">Album</a>
+  <a><img src="images/favicon.png"></a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+   <script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} </script>
+
+    
+ <header>Gallery</header>   
+<!---Gallery--->
+<div class="photo-album">
+    	
+	<a class="large polaroid img1"><img src=images/galleryimage.jpg></a>
+	
+    <a  class="polaroid img2"><img src= images/galleryimage2.jpg alt=""></a>
+	
+    <a  class="medium polaroid img4"><img src= "images/galleryimage3.jpg" alt=""></a>
+	
+    <a  class="polaroid img5"><img src=images/galleryimage4.png></a>
+	
+    <a  class="polaroid img6"><img src=images/galleryimage8.jpg alt=""></a>
+	
+    <a  class="polaroid img7"><img src=images/galleryimage6.jpg></a>
+	
+    <a class="medium polaroid img8"><img src=images/galleryimage7.jpg alt=""></a>
+</div>
+
+
+
+    
+</body>    
+</html>
